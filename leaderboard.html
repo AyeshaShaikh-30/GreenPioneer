@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling/leaderboard-style.css">
+    <title>Leaderboards</title>
+</head>
+<body>
+    <div id="main-container">
+        <div id="navbar"></div>
+        <div class="page-section sidenav">
+
+            <div id="user-name">
+                <div id="name">
+                    <h1>Eco Novice</h1>
+                    <!-- <h2>Eco Novice</h2> -->
+                </div>
+            </div>
+
+            <div class="avatar">
+                <img id="avatar-img" src="images/eco-recycler-transparent.png" alt="">
+            </div>
+
+            <div class="user-stats">
+                
+                 <div id="tokens">
+                    <h2>Tokens: </h2>
+                    <img id="token-img" src="images/coin.png" alt="">
+                    <h3>x <span id="token-amount">3</span> </h3>
+                 </div>
+
+                 <div id="badges">
+                    <div id="badges-label">
+                        <h2>Badges</h2>
+                    </div>
+        
+                    <div id="badges-images">
+                        <img class="badges-icons" src="images/bronze-transparent.png" alt="">
+                        <img class="badges-icons" src="images/silver-transparent.png" alt="">
+                        <img class="badges-icons" src="images/gold-transparent.png" alt="">
+                    </div>
+                 </div>
+            </div>
+
+        </div>
+        <div class="page-section progress">
+            <div id="progress-container">
+                <div id="progressbar-title">
+                    Your Progress
+                </div>
+                <div class="progressbar">
+                    <div id="progressbar-main">
+                        <span id="progress-percentage">0</span>
+                    </div>
+                </div>
+                <div class="progressbar-label">
+                    Tokens need for next reward:  <span id="required-tokens"> 5 </span> / <span id="total-required-tokens">10</span> 
+                </div>
+            </div>
+
+            <div id="donate-btn"><a href="donate.html">Donate</a></div>
+            
+        </div>
+
+        <div class="page-section rewards">
+            <div id="rewards-label">
+                <span>Rewards</span>
+            </div>
+
+            <div class="gift-cards-flow">
+                <div class="reward-card">
+                    <img class="reward-img" id="BL-logo" src="images/BL.png" alt="">
+                    <span class="reward-text">5% off on all products</span>
+                </div>
+                <div class="reward-card">
+                    <img class="reward-img" id="eco-trendy-logo" src="images/2-1-EcoTrendy-Transparent_360x.png" alt="">
+                    <span class="reward-text">40% off on first order</span>
+                </div>
+                <div class="reward-card">
+                    <img class="reward-img" src="images/gift-box.png" alt="">
+                </div>
+                <div class="reward-card">
+                    <img class="reward-img" src="images/gift-box.png" alt="">
+                </div>
+                <div class="reward-card">
+                    <img class="reward-img" src="images/gift-box.png" alt="">
+                </div>
+                <div class="reward-card">
+                    <img class="reward-img" src="images/gift-box.png" alt="">
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <div class="page-section leaderboard">
+            <div id="leaderboard-label">
+                <h2>Leaderboard</h2>
+            </div>
+            <div id="leaderboard-ranks">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Name</th>
+                            <th>Tokens</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Ayesha</td>
+                            <td>x10</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ayushi</td>
+                            <td>x11</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Bushra</td>
+                            <td>x8</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Janhavi</td>
+                            <td>x7</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Sejal</td>
+                            <td>x6</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Shivam</td>
+                            <td>x5</td>
+                        </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="scripts/leaderboard-script.js"></script>
+</html>

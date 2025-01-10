@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plastic Quest</title>
+    <link rel="stylesheet" href="styling/donate-style.css">
+</head>
+<body>
+   
+  
+      <header> Eco-Warrior Arena : Donate</header>
+    
+    
+    
+    
+    <h1>
+      <header>
+    <nav>
+      <!-- NAVIGATION LINK PUT INPUT -->
+      
+        <button class="nav-button"><a href="leaderboard.html">Back To Leaderboard</a></button>
+        <button class="nav-button"><a href="landingpage.html">Retest Personality</a></button>
+    </nav>
+    </header>
+</h1>
+
+
+    <main>
+        <section id="search">
+            <h2>Find Collection Points Near You</h2>
+            <input type="text" id="location-input" placeholder="Where are you at, hero?">
+            <div id="plastic-types">
+                <label><input type="checkbox" value="Type 1"> Type 1: PET - Beverage Bottles</label>
+                <label><input type="checkbox" value="Type 2"> Type 2: HDPE - Milk Jugs & Detergent Bottles</label>
+                <label><input type="checkbox" value="Type 3"> Type 3: PVC - Pipes & Packaging</label>
+                <label><input type="checkbox" value="Type 4"> Type 4: LDPE - Shopping Bags & Wraps</label>
+                <label><input type="checkbox" value="Type 5"> Type 5: PP - Yogurt Cups & Bottle Caps</label>
+                <label><input type="checkbox" value="Type 6"> Type 6: PS - Plates & Cups</label>
+                <label><input type="checkbox" value="Type 7"> Type 7: Eco-bricks - Plastic for Buildings</label>
+                <label><input type="checkbox" value="Type 8"> Type 8: Other - Bioplastics & Polycarbonate</label>
+            </div>
+
+            <button onclick="searchOrganizations()">Start Your Search</button>
+            <button id="clear-button" onclick="clearResults()">Clear the Map</button>
+        </section>
+
+        <section id="map">
+            <h2>Your Missions At</h2>
+            <div id="results"></div>
+        </section>
+
+        <section id="info-box">
+            <h2>Villains of the Trash Realm</h2>
+            <p>Here’s a list of all the plastic types you can donate :</p>
+            <ul>
+                <li><strong>Type 1: PET</strong> - Perfect for those beverage bottles!</li>
+                <li><strong>Type 2: HDPE</strong> - Those milk jugs and detergent bottles.</li>
+                <li><strong>Type 3: PVC</strong> - Think pipes and packaging materials.</li>
+                <li><strong>Type 4: LDPE</strong> - That’s your shopping bags and wraps.</li>
+                <li><strong>Type 5: PP</strong> - Yogurt cups and bottle caps. Classic!</li>
+                <li><strong>Type 6: PS</strong> - Disposable plates and cups, all around you!</li>
+                <li><strong>Type 7: Eco-bricks</strong> -  bricks building the future.</li>
+                <li><strong>Type 8: Other</strong> - Including bioplastics and polycarbonate. A true wild card.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Tip: Keep your plastic clean and sorted like a true hero!</p>
+    </footer>
+
+    <script src="scripts/donate-script.js"></script>
+</body>
+</html>

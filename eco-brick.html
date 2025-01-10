@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBrick Quest</title>
+    <link rel="stylesheet" href="styling/eco-brick-styles.css">
+</head>
+<body>
+    <div class="scroll-section">
+        <div>
+            <h1>ECO-BRICKING QUEST</h1>
+        </div>
+        <div class="scroll-item" id="section1">
+            <img src="images/grumpy_plastic1.jpg" alt="First Image" class="scroll-image">
+            <h2 class="scroll-heading">The plastic you litter feels like this grumpy plastic!</h2>
+        </div>
+        <div class="scroll-item" id="section2">
+            <img src="images/superhero.jpg" alt="Second Image" class="scroll-image">
+            <h2 class="scroll-heading">Wanna make it a superhero instead?!</h2>
+            
+            <!-- Start Adventure Button Section -->
+            <button class="start-level-button" onclick="scrollToTimeline()">✨Learn Eco-Bricking to make one!✨</button>
+        </div>
+    </div>
+    <div class="timeline" style="display: none;">
+        <!-- Level 0 (Left Container) -->
+        <div class="container left-container" id="level0-container">
+            <img src="images/level0.png" alt="Level 0 icon" class="level-icon">
+            <div class="text-box">
+                <h3>🧩Level 0: Recyclabe-Plastic Detective</h3>
+                <h5><i>MISSION: Uncover the plastic's true identity by reading its RIC code!</i></h5>
+                <!-- <button id="start-level-btn" class="start-level-button">Start Level</button> -->
+
+                <div id="level0-content" style="display: none;">
+                    <p>Is this grumpy plastic fit for eco-brick magic? What's the number behind it!</p>
+                    <img src="images/detectiveplastic.jpg" alt="Detective Plastic Image" class="detective-image">
+                    
+                    <div class="buttons">
+                        <button class="option-button" onclick="checkAnswer(1)">#1 PET</button>
+                        <button class="option-button" onclick="checkAnswer(2)">#2 HDPE</button>
+                        <button class="option-button" onclick="checkAnswer(3)">#3 PVC</button>
+                        <button class="option-button" onclick="checkAnswer(4)">#4 LDPE</button>
+                        <button class="option-button" onclick="checkAnswer(5)">#5 PP</button>
+                        <button class="option-button" onclick="checkAnswer(6)">#6 PS</button>
+                        <button class="option-button" onclick="checkAnswer(7)">#7 OTHERS</button>
+                    </div>
+                    
+                    <!-- Meme Video -->
+                    
+                    
+                    <div id="message" class="level-message"></div>
+                    <div id="extra-message" class="extra-message">
+                        <p>🎯 Non-recyclable plastics are the real heroes of eco-bricks – recyclable ones have better heroes for them! 😉</p>
+                    </div>
+                    <!-- <div id="next-level-0" style="display: none;">
+                        <button class="expand-button" onclick="unlockNextLevel('level1-text-box')" >Yay! Lets start Eco-Bricking!!</button>
+                    </div> -->
+                </div>
+            </div>
+            <span class="left-container-arrow"></span>
+        </div>
+
+        <!-- Level 1 (Right Container) -->
+        <div class="container right-container" id="level1-container">
+            <img src="images/level1.png" alt="Level 1 icon" class="level-icon">
+            <div class="text-box" id="level1-text-box">
+                <h3>🧩Level 1: A Little Sun, A Little Care</h3>
+                <h5><i>MISSION: Wash Away the Grumpiness</i></h5>
+                
+                <!-- <button id="start-level-btn1" class="start-level-button">Start Level</button> -->
+        
+                <div id="level1-content" class="level-content" style="display: none;">
+                    <p>Let's remove any unnecessary grease or oil our grumpy might have and remove any possible moisture!></p>
+                    
+                    <!-- Image for Detective Plastic -->
+                    <img src="images/level1demo.jpg" alt="Washing Plastic" class="washing-image">
+        
+                    
+                    
+                    
+                    <div id="level1-message" class="level-message"></div>
+                    <!-- <div id="next-level-1" style="display: none;">
+                        <button class="expand-button" onclick="unlockNextLevel('level2-text-box')">Yay! Let's go for Eco-Bricking!</button>
+                    </div> -->
+                </div>
+            </div>
+            <span class="right-container-arrow"></span>
+        </div>
+
+        <!-- Level 2 (Left Container) -->
+        <div class="container left-container" id="level2-container">
+            <img src="images/level2.png" alt="Level 2 icon" class="level-icon">
+            <div class="text-box" id="level2-text-box">
+                <h3>🧩Level 2: Cut & Pack It Tight!</h3>
+                <h5><i>MISSION: Stuff the bottle like a pro!</i></h5>
+                
+                <!-- <button id="start-level-btn2" class="start-level-button">Start Level</button> -->
+        
+                <div id="level2-content" class="level-content" style="display: none;">
+                    <p><i>Time to ensure no air or space is left inside. Stuff your grumpy plastic tightly!</i></p>
+                    
+                    <img src="images/level2demo.jpg" alt="Washing Plastic" class="washing-image">
+                    
+                    <div id="message2" class="level-message"></div>
+                    <!-- <div id="next-level-2" style="display: none;">
+                        <button class="expand-button" onclick="unlockNextLevel('level3-text-box')">Yay! Ready for the Grand Finale!</button>
+                    </div> -->
+                </div>
+            </div>
+            <span class="left-container-arrow"></span>
+        </div>
+
+        <!-- Level 3 (Right Container) -->
+        <div class="container right-container" id="level3-container">
+            <img src="images/level3.png" alt="Level 3 icon" class="level-icon">
+            <div class="text-box" id="level3-text-box">
+                <h3>🧩Level 3: Seal the Deal!</h3>
+                <h5><i>MISSION: Cap it tight and celebrate your hero!</i></h5>
+                
+                <!-- <button id="start-level-btn3" class="start-level-button">Start Level</button> -->
+                <img src="images/level3demo.jpg" alt="Washing Plastic" class="washing-image">
+                <div id="level3-content" class="level-content" style="display: none;">
+                    <p><i>Seal your eco-brick bottle tightly and make sure it's ready to save the planet!</i></p>
+                    
+                    <!-- Meme Video -->
+                    
+                    
+                    <div id="message3" class="level-message"></div>
+                    <!-- <div id="next-level-3" style="display: none;">
+                        <button class="expand-button">Congratulations, Eco-Brick Champ! 🎉</button>
+                    </div> -->
+                </div>
+            </div>
+            <span class="right-container-arrow"></span>
+        </div>
+        <div class="collect-tokens">
+            <button class="collect-tokens-button"><a href="leaderboard.html">🎉 Collect Tokens! 🎉</a></button>
+        </div>
+        
+
+    </div>
+    <script src="scripts/eco-brick-script.js"></script>
+</body>
+</html>

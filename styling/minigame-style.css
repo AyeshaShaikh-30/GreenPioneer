@@ -1,0 +1,370 @@
+:root {
+  --main-bg-color: #354024; /* Dark green */
+  --accent-color: #889063; /* Olive green */
+  --button-gradient-start: #4c3d19; /* Brownish shade */
+  --button-gradient-end: #cfbb99; /* Light brown */
+  --button-hover-gradient-start: #354024; /* Dark green */
+  --button-hover-gradient-end: #e5d7c4; /* Beige */
+  --font-family: "Times New Roman", serif;
+}
+
+/* General Styling */
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: linear-gradient(135deg, var(--main-bg-color), var(--accent-color))
+    fixed;
+}
+#stage {
+  color: #cfbb99;
+  text-shadow: 2px 2px 4px #4c3d19;
+}
+
+/* Header */
+#main-header {
+  padding: 50px 30px;
+  padding-top: 100px;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #cfbb99;
+}
+
+#main-header h1 {
+  margin: 0;
+  text-shadow: 2px 2px 4px #4c3d19;
+}
+
+/* Storyline Section */
+#storyline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.storyline-content {
+  flex: 1;
+  text-align: left;
+}
+
+.storyline-content h2 {
+  font-size: 2.5rem; /* Larger font for the heading */
+  color: #4c3d19; /* Brownish shade */
+  margin-bottom: 50px; /* Add space below the heading */
+  font-weight: bold; /* Bold font */
+}
+
+/* CSS Animations for Paragraph and Image */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.storyline-content p {
+  font-size: 1.2rem; /* Slightly larger text for readability */
+  line-height: 1.8; /* Increase line height for better spacing */
+  color: #a5af95; /* Dark green */
+  margin-bottom: 20px; /* Add space between paragraphs */
+  text-align: left; /* Align text to the left */
+  max-width: 700px; /* Max width for better control */
+  margin: 0 auto; /* Center align the text */
+  animation: fadeInUp 1.5s ease-out;
+  padding-bottom: 20px;
+}
+
+/* Styling for the first paragraph (special emphasis) */
+.storyline-content p:first-of-type {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #889063; /* Olive green for emphasis */
+}
+
+/* Additional button styling */
+.storyline-content button {
+  background: linear-gradient(45deg, #354024, #889063); /* Gradient button */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding-bottom: 50px;
+}
+
+/* Hover effect for button */
+.storyline-content button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Storyline Image */
+.storyline-image {
+  flex: 1;
+  text-align: center;
+  animation: zoomIn 1.5s ease-out;
+}
+
+.storyline-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Drag-and-Drop Styling */
+#drag-item {
+  background-color: #cfbb99;
+  padding: 15px;
+  margin: 15px auto;
+  cursor: grab;
+  width: 150px;
+  border-radius: 5px;
+}
+
+#drag-items img {
+  transition: transform 0.2s;
+}
+
+#drag-items img:active {
+  transform: scale(1.1);
+  cursor: grabbing;
+}
+
+#drop-zones {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.drop-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  width: 150px;
+  height: 200px;
+  background-color: #e5d7c4;
+  text-align: center;
+}
+
+.drop-zone img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.drop-zone p {
+  font-weight: bold;
+}
+
+/* Progress Section */
+#progress {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  background-color: #4c3d19;
+}
+
+#progress p {
+  font-size: 1.2em;
+  color: rgb(216, 237, 255);
+}
+
+/* AQI Box Styling */
+#aqi-box {
+  display: inline-block;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+  background-color: #354024;
+}
+
+#aqi-box p {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #889063;
+  font-weight: bold;
+}
+#Interactive {
+  color: #cfbb99;
+  text-shadow: 2px 2px 4px #4c3d19;
+  font-size: 50px;
+}
+#description1 {
+  color: #cfbb99;
+  text-shadow: 2px 2px 4px #4c3d19;
+  font-size: 30px;
+}
+#description2 {
+  color: #cfbb99;
+  text-shadow: 2px 2px 4px #4c3d19;
+  font-size: 30px;
+}
+#aqi-box span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #889063;
+}
+
+/* Consequences Section */
+#consequences {
+  margin-top: 1em;
+}
+
+#animation {
+  width: 200px;
+  height: auto;
+}
+
+/* Life Points */
+#life-points {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.heart-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+/* Button Styles */
+#start-game {
+  background: linear-gradient(45deg, var(--main-bg-color), var(--accent-color));
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+#start-game:hover {
+  background: linear-gradient(
+    45deg,
+    var(--button-hover-gradient-start),
+    var(--button-hover-gradient-end)
+  );
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#start-game:focus {
+  outline: 2px solid #388e3c;
+  outline-offset: 4px;
+}
+
+#start-game:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  #storyline {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .storyline-content,
+  .storyline-image {
+    flex: none;
+  }
+
+  #drop-zones {
+    flex-direction: column;
+  }
+
+  #drag-items {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+#info-page {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#info-page h1 {
+  color: #354024;
+}
+#info-page ul {
+  list-style: disc inside;
+  text-align: left;
+  margin: 20px auto;
+  padding: 0;
+  max-width: 400px;
+}
+#info-page button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #889063;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#info-page button:hover {
+  background-color: #354024;
+}
+#feedback {
+  color: black;
+  font-size: 20px;
+}
+
+#next-page {
+  display: inline-block;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+  background-color: #354024;
+}
+
+#next-page p {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #889063;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0;
+  color: #889063;
+  font-weight: bold;
+}

@@ -1,0 +1,346 @@
+/* General styling for the body */
+body {
+  margin: 0;
+  background-color: #4c3d19; /* Updated color */
+  overflow: hidden;
+}
+
+/* Main container */
+#main-container {
+  display: grid;
+  grid-template-columns: minmax(200px, 1.5fr) 2fr; /* Wider sidebar */
+  grid-template-rows: auto 1fr 2fr; /* Adjust row heights */
+  gap: 10px;
+  height: 100vh;
+  width: 100vw;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* General page section styling */
+.page-section {
+  border: 1px solid #e5d7c4;
+  background-color: #35402470; /* Updated color */
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Sidebar navigation */
+.sidenav {
+  grid-row: 1 / span 3; /* Spans all three rows */
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* User name section */
+#user-name {
+  color: #e5d7c4;
+  background-color: #cfbb99; /* Updated color */
+  border-radius: 10px;
+  padding-inline: 20px;
+  height: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Avatar image section */
+#avatar-img {
+  height: 520px;
+}
+
+/* Avatar box styling */
+.avatar {
+  margin-top: 10px;
+  background-image: url("images/th copy.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-color: #889063; /* Updated color */
+  box-shadow: 0 0 40px inset #889063;
+  border-radius: 10px;
+  padding-inline: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* User stats section */
+.user-stats {
+  margin-top: 10px;
+  color: #e5d7c4;
+  background-color: #cfbb99; /* Updated color */
+  border-radius: 10px;
+  padding: 10px;
+  height: 32.5%;
+  display: block;
+  justify-content: center;
+}
+
+/* Tokens section */
+#tokens {
+  color: #354024;
+  background-color: #cfbb99; /* Updated color */
+  border-radius: 10px;
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Badges section */
+#badges {
+  margin-top: 10px;
+  color: #e5d7c4;
+  background-color: #354024; /* Updated color */
+  border-radius: 10px;
+  width: 100%;
+  height: 72%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Badges label */
+#badges-label {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Badges images section */
+#badges-images {
+  width: 120%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Badges icons */
+.badges-icons {
+  height: 100px;
+  padding-bottom: 60px;
+}
+
+/* Token image styling */
+#token-img {
+  height: 32px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Progress bar section */
+.progress {
+  grid-column: 2;
+  grid-row: 1;
+  min-height: 60px;
+}
+
+/* Leaderboard section */
+.leaderboard {
+  grid-column: 2;
+  grid-row: 3;
+  flex-direction: column;
+  min-height: 400px;
+}
+
+/* Leaderboard label */
+#leaderboard-label {
+  color: #354024;
+  background-color: #cfbb99; /* Updated color */
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+/* Leaderboard ranks section */
+#leaderboard-ranks {
+  margin-top: 10px;
+  background-color: #cfbb99; /* Updated color */
+  border-radius: 10px;
+  width: 100%;
+  height: 88%;
+  display: flex;
+  flex-direction: column;
+  color: #4c3d19;
+}
+
+thead tr {
+  background-color: #cfbb99; /* Updated color */
+  margin-top: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #889063;
+}
+
+tr {
+  background-color: #889063; /* Updated color */
+  border-radius: 5px;
+  display: flex;
+  padding: 5px;
+  justify-content: space-around;
+  margin: 10px 20px 10px 20px;
+}
+
+/* Progress bar styling */
+.progress {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#progress-container {
+  width: 90%;
+}
+
+.progressbar {
+  background-color: #354024; /* Updated color */
+  border-radius: 8px;
+}
+
+#progressbar-title {
+  color: #e5d7c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+#progressbar-main {
+  background-color: #889063; /* Updated color */
+  border-radius: 8px;
+  padding: 9px;
+  width: 50%;
+  min-width: 6%;
+  max-width: 98%;
+}
+
+/* Progress bar label styling */
+.progressbar-label {
+  margin-top: 10px;
+  color: #e5d7c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#donate-btn {
+  border-radius: 10px;
+  background-color: #cfbb99; /* Updated color */
+  height: 35%;
+  width: 30%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #354024;
+}
+
+/* Rewards section */
+.rewards {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 00px;
+}
+
+#rewards-label {
+  color: #e5d7c4;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+/* Gift cards flow section */
+.gift-cards-flow {
+  border-radius: 10px;
+  box-shadow: 0 0 10px inset #889063;
+  background-color: #354024; /* Updated color */
+  width: 100%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+/* Individual reward card styling */
+.reward-card {
+  background-color: #889063; /* Updated color */
+  height: 80%;
+  width: 30%;
+  max-width: 180px;
+  margin: 0 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Continuous scrolling animation for cards */
+.gift-cards-flow .reward-card {
+  animation: scroll 5s linear infinite;
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Pause scrolling on hover */
+.gift-cards-flow:hover .reward-card {
+  animation-play-state: paused;
+}
+
+/* Duplicate cards for seamless scrolling */
+.gift-cards-flow-inner {
+  display: inline-flex;
+  animation: marquee 10s linear infinite;
+}
+
+.gift-cards-flow:hover .gift-cards-flow-inner {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Reward image styling */
+.reward-img {
+  width: 80px;
+}
+
+#BL-logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+#eco-trendy-logo {
+  width: 120px;
+  margin-bottom: 10px;
+}

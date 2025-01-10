@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plastic Management Game</title>
+  <link rel="stylesheet" href="styling/minigame-style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="main-header">
+    <h1>Hey, World-Saver!</h1>
+  </header>
+
+  <!-- Storyline Section -->
+  <section id="storyline">
+    <div class="storyline-content">
+      <h2 id="stage">The Stage is Yours!</h2>
+      <p>Do you know what AQI is?</p>
+      <p>The Air Quality Index (AQI) is used for reporting daily air quality. It tells you how clean or polluted your air is, 
+        and what associated health effects might be a concern for you.</p>
+      <p>Let's play a game to demonstrate it.</p>
+      <p>Your goal is to make environmentally responsible decisions about plastic waste.</p>
+      <br>
+      <button id="start-game">Start Game</button>
+    </div>
+    <div class="storyline-image">
+      <img src="images/fact-removebg-preview.png" alt="Environmental Image" />
+    </div>
+  </section>
+
+  <!-- Game Section -->
+  <main id="game-area" class="hidden">
+    
+    <h2 id="Interactive">Interactive Game</h2>
+    <p id ="description1">Here is a plastic bag that we use in daily life</p>
+    <p id="description2">Drag the plastic bag to the correct disposal area:</p>
+
+    <div id="drag-items">
+      <img
+    src="images/plasticbaghappy-removebg-preview.png" 
+    id="plastic-bag" 
+    alt="Plastic Bag"
+    draggable="true"
+    style="width: 180px; cursor: grab;"
+     />
+    </div>
+
+    <div id="drop-zones">
+      <div id="bin" class="drop-zone" aria-label="Trash Bin">
+        <img src="images/trashh.jpg" alt="Trash Bin" />
+        <p>Trash Bin</p>
+        <p>Throw in Trash Bin</p>
+      </div>
+      <div id="road" class="drop-zone" aria-label="Road">
+        <img src="images/roadwater.jpg" alt="Road" />
+        <p>Road</p>
+        <p>Throw on Road</p>
+      </div>
+      <div id="fire" class="drop-zone" aria-label="Burn">
+        <img src="images/fire.jpg" alt="Burn" />
+        <p>Burn</p>
+        <p>Burn The Plastic</p>
+      </div>
+    </div>
+    
+    <p id="feedback" role="alert"></p>
+  </main>
+
+  <!-- Progress Indicators -->
+  <div id="progress">
+    <p>Life Points: <span id="life-points">3</span></p>
+    <p>AQI Level: <span id="aqi-level">50</span></p>
+  </div>
+
+  <!-- AQI Level Box -->
+<div id="aqi-box">
+  <p>AQI Level</p>
+</div>
+
+
+  <!-- Consequences Animation -->
+  <div id="consequences">
+    <img id="animation" src="" alt="" class="hidden">
+  </div>
+  
+  <div id="life-points">
+    <img src="images/heart.png" alt="Life Point" class="heart-icon">
+    <img src="images/heart.png" alt="Life Point" class="heart-icon">
+    <img src="images/heart.png" alt="Life Point" class="heart-icon">
+  </div>
+
+
+  <div id="next-page">
+    <p><a href="eco-brick.html">Next</a></p>
+  </div>
+
+  <p id="aqi-info" style="font-weight: bold;"></p>
+
+ 
+
+
+
+  <script src="scripts/minigame-script.js"></script>
+</body>
+</html>

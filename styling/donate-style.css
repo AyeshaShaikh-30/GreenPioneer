@@ -1,0 +1,285 @@
+/* General Styling */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #354024, #cfbb99); /* Deep green to soft beige */
+    color: #354024; /* Light pastel text */
+    line-height: 1.6;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    background-color: transparent;
+    color: #e5d7c4; /* Light pastel */
+    padding: 2rem 5%;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Navigation Styling */
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 1rem;
+}
+
+/* Navigation Button Styling */
+.nav-button {
+    padding: 1rem 2rem;
+    background-color: #cfbb99; /* Soft beige */
+    color: #354024;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    margin: 0 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-button:hover {
+    background-color: #354024; /* Deep green */
+    transform: scale(1.05);
+    color:#cfbb99;
+}
+
+header nav a {
+    color: #e5d7c4; /* Light pastel */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header nav a:hover {
+    border-bottom: 2px solid #cfbb99; /* Soft beige */
+}
+
+/* Main Styling */
+main {
+    padding: 3rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 2rem;
+    padding: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.2); /* Slight cream background */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    text-align: justify;
+    line-height: 1.8;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Input and Select Styling */
+#search input,
+#search button,
+#plastic-types input[type="checkbox"]:focus {
+    width: calc(100% - 30px);
+    margin: 10px 15px;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+
+#search input {
+    color: #cfbb99; /* Deep green */
+    border: 2px solid #cfbb99; /* Soft beige */
+    background-color: #354024;
+    transition: all 0.3s ease;
+}
+
+#search input:focus {
+    color: #354024;
+    border-color: #354024; /* Soft green */
+    background-color: #cfbb99; /* Light pastel */
+}
+
+/* Plastic Types */
+#plastic-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#plastic-types label {
+    display: flex;
+    align-items: center;
+    background-color: #354024;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    border: 2px solid #cfbb99; /* Soft beige border */
+    font-size: 1rem;
+    color: #e5d7c4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    gap: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#plastic-types label:hover {
+    background-color: #cfbb99;
+    color: #4c3d19;
+}
+
+#plastic-types input[type="checkbox"] {
+    accent-color: #889063; /* Soft beige */
+    width: 16px;
+    height: 16px;
+}
+
+#plastic-types input[type="checkbox"]:focus {
+    border-color: #cfbb99; /* Deep green */
+}
+
+/* Button Styling */
+#search button,
+#clear-button {
+    padding: 1rem 2rem;
+    background-color: #cfbb99; /* Soft beige */
+    color: #354024; /* Light pastel */
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    margin-top: 10px;
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#search button:hover,
+#clear-button:hover {
+    background-color: #354024; /* Deep green */
+    transform: scale(1.05);
+    color:#e5d7c4;
+}
+
+/* Card Styling */
+.card {
+    padding: 2rem;
+    border: none;
+    border-radius: 15px;
+    background-color: #4c3d19;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    text-align: justify;
+    line-height: 1.8;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #cfbb99; /* Soft beige */
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #e5d7c4;
+}
+
+/* Info Box Styling */
+#info-box {
+    background-color: #cfbb99; /* Soft beige */
+    border-left: 5px solid #889063; /* Soft green */
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-top: 2rem;
+    color: #354024; /* Deep green */
+    text-align: justify;
+    line-height: 1.8;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #354024; /* Deep green */
+    color: #e5d7c4;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        font-size: 2.2rem;
+    }
+
+    #search input,
+    #search select {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    #info-box {
+        padding: 1rem;
+    }
+
+    #plastic-types {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    #plastic-types label {
+        padding: 0.5rem 0.8rem;
+    }
+
+    #search button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
